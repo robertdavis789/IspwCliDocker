@@ -31,4 +31,4 @@ RUN unzip TopazCLI-linux.gtk.x86_64.zip
 RUN chmod 777 IspwCLI.sh
 
 #Set JAVA_HOME environment variable
-RUN export JAVA_HOME=/usr/lib64/jvm/java-11-openjdk-11
+RUN echo "export JAVA_HOME=/usr/lib64/jvm/java-11-openjdk-11" >> ~/.bashrc 
