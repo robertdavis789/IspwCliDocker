@@ -25,7 +25,5 @@ WORKDIR "/TopazCliInstall"
 RUN unzip TopazCLI-linux.gtk.x86_64.zip
 RUN chmod 777 IspwCLI.sh SyncToIspw.sh
 
-WORKDIR "/tmp"
-
 ENTRYPOINT ["/TopazCliInstall/SyncToIspw.sh"]
 CMD ["SyncToIspw"]
