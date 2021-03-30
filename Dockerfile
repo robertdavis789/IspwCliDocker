@@ -3,8 +3,6 @@ FROM opensuse/leap
 
 LABEL author="Robert Davis <robert.davis@compuware.com>"
 USER root
-ENV GIT_PATH="/Users/pmirdd0/tmp/IspwCliDocker/rjk2"
-ARG GIT_LOCAL_PATH
 
 RUN zypper up -y &&\
 	zypper -q --non-interactive install \
